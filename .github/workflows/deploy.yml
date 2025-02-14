@@ -42,7 +42,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-         image-ref: "asia-south1-docker.pkg.dev/jiomeet-vidyo/my-repo/flask-app"
+          image-ref: "asia-south1-docker.pkg.dev/jiomeet-vidyo/my-repo/flask-app:v1"
          format: "table"
          exit-code: 1
          severity: "CRITICAL,HIGH"
